@@ -1,0 +1,18 @@
+[package]
+name = "pomodoro"
+version = "0.1.0"
+edition = "2021"
+description = "A polished Catppuccin-themed Pomodoro timer for the terminal"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.6", features = ["derive"] }
+crossterm = "0.29.0"
+notify-rust = "4.18.0"
+ratatui = "0.30.2"
+signal-hook = "0.4.4"
+
+[profile.release]
+lto = true
+strip = true
